@@ -38,7 +38,7 @@ public class CountryOverviewInputActivity extends ListActivity implements OnClic
 		getListView().addHeaderView(input);
 		
 		// Default ArrayAdapter wird durch ein eigenes Adapter ersetzt:
-		// LaenderAdapter definieren:
+		// LaenderAdapter wird hier definiert:
 		//ArrayAdapter<Land> adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, new ArrayList<Land>());
 		countriesAdapter = new CountriesAdapter(this, new ArrayList<Country>());
 		setListAdapter(countriesAdapter);
